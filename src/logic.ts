@@ -36,9 +36,9 @@ export function registerRoutes(app: Hono) {
       const latestBlockHex = await rpcCall(rpcUrl, "eth_blockNumber", []);
       const latestBlock = parseInt(latestBlockHex, 16);
 
-      // Scan last 5 blocks for large transactions
+      // Scan last 2 blocks for large transactions (keep fast for x402 settle)
       const whaleTransactions: any[] = [];
-      const blocksToScan = 5;
+      const blocksToScan = 2;
 
       for (let i = 0; i < blocksToScan && whaleTransactions.length < 20; i++) {
         const blockNum = "0x" + (latestBlock - i).toString(16);
