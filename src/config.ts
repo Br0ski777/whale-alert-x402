@@ -36,6 +36,45 @@ Do NOT use for wallet balance -- use wallet_get_portfolio instead. Do NOT use fo
         },
         required: [],
       },
+      outputSchema: {
+          "type": "object",
+          "properties": {
+            "chain": {
+              "type": "string",
+              "description": "Blockchain"
+            },
+            "minValueEth": {
+              "type": "number",
+              "description": "Minimum whale threshold"
+            },
+            "latestBlock": {
+              "type": "number",
+              "description": "Latest block scanned"
+            },
+            "blocksScanned": {
+              "type": "number",
+              "description": "Number of blocks scanned"
+            },
+            "whaleCount": {
+              "type": "number",
+              "description": "Number of whale transactions"
+            },
+            "transactions": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "timestamp": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "chain",
+            "whaleCount",
+            "transactions"
+          ]
+        },
     },
   ],
 };
