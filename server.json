@@ -12,7 +12,7 @@
   "remotes": [
     {
       "type": "sse",
-      "url": "https://whale-alert-x402-production.up.railway.app/mcp"
+      "url": "https://whale-alert.api.klymax402.com/mcp"
     }
   ]
 }
