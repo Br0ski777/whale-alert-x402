@@ -9,7 +9,7 @@ export const API_CONFIG: ApiConfig = {
     {
       method: "POST",
       path: "/api/whales",
-      price: "$0.003",
+      price: "$0.008",
       description: "Track large on-chain whale transactions",
       toolName: "crypto_track_whale_transactions",
       toolDescription: `Use this when you need to track large on-chain transactions (whale movements) on Ethereum or Base. Returns recent high-value transfers in JSON.
