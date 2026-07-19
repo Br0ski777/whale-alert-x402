@@ -37,7 +37,7 @@ Any x402-aware client ([`@x402/fetch`](https://www.npmjs.com/package/@x402/fetch
 
 | Tool | Method | Path | Price | Description |
 |---|---|---|---|---|
-| `crypto_track_whale_transactions` | POST | `/api/whales` | $0.003 | Track large on-chain whale transactions |
+| `crypto_track_whale_transactions` | POST | `/api/whales` | $0.008 | Track large on-chain whale transactions |
 
 ### `crypto_track_whale_transactions`
 
