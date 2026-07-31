@@ -16,7 +16,7 @@ async function tryRequirePayment(price: number): Promise<void> {
 }
 
 const RPC_URLS: Record<string, string> = {
-  ethereum: "https://eth.llamarpc.com",
+  ethereum: "https://ethereum-rpc.publicnode.com",
   base: "https://mainnet.base.org",
 };
 
